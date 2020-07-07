@@ -1,0 +1,75 @@
+body{
+    font-size: 1.25rem;
+    margin: 0;
+    color: rgb(6, 6, 31);
+    padding: 0 5rem;
+}
+
+/* typography */
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: darkblue;
+    
+}
+
+h1 span{
+    color: blue;
+}
+h2, h3{
+    font-size: 1.5rem;
+    color: rgb(51, 221, 221);
+}
+
+p{
+    margin: 0;
+}
+
+/* layout */
+
+.container{
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+img{
+    width: 100%;
+}
+
+.coloum{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.col-1{
+    width: 25%;
+}
+
+.col-2{
+    width: 35%;
+}
+    
+.col-3{
+    width: 40%;
+}
+
+.col-bg {
+    background: rgb(191, 236, 236);
+    color: rgb(54, 21, 131);
+    padding: 2rem;
+}
+
+@media (max-width: 700px) {
+    .coloum{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px) {
+    .col-1,.col-2,.col-3{
+        width: 100%;
+    }
+}
